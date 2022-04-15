@@ -341,87 +341,165 @@ nav
 		color: #1FBAD6
 
 footer
-	min-height: 162px
-	padding: 11px 21px 10px 23px
-	position: relative
-	.socials
-		width: 156px
-		height: 35px
-		position: absolute
-		top: 48px
-		.icon
-			width: 32px
-			height: 32px
-			// display: inline-block
-			display: inline-flex
-			justify-content: center
-			align-items: center
-			border-radius: 100%
-			background: #070716
-			img
-				display: inline-block
-				margin:  0 auto
-				vertical-align: middle
-	.stores
-		width: 296px
-		height: 27px
+	padding: 14px 23px 39px 23px
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
 		display: flex
 		justify-content: space-between
-		position: absolute
-		right: 0
-		top: 47px
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
 		&_item
-			display: inline-block
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
 			border-radius: 100%
-			background: #070716
-	.blue_line
-		width: 301px
-		height: 4px
-		margin: 0 auto 34px
-		background: #1FBAD6
-	.footer_menu
-		&_1
-			padding: 0
-			width: 362px
-			margin: 0 auto 18px  /* обнуление margin в bootstrap-reboot */
+			text-decoration: none  /* при использовании иконочного шрифта */
+			i
+				color: #fff
+
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main
+			padding: 0 14px	
 			display: flex
 			justify-content: space-between
-			list-style-type: none /* убрать маркеры */
-			.footer_menu_link
+			a
+				font-weight: 300
 				font-size: 15px
+				text-transform: uppercase
+				text-decoration: none
 				color: #070716
-		&_2
-			padding: 0
-			width: 390px
-			margin: 0 auto 19px /* обнуление margin в bootstrap-reboot */
+		&_sub
+			margin-top: 17px
 			display: flex
 			justify-content: space-between
-			list-style-type: none /* убрать маркеры */
-			.footer_menu_link
+			a
+				font-weight: 300
 				font-size: 11px
+				text-transform: uppercase
+				text-decoration: none
 				color: #999999
-		&_link
-			font-weight: 300
+		&_lang
+			display: block
+			margin: 0 auto
+			margin-top: 17px
+			font-weight: 400
+			font-size: 11px
+			text-align: center
 			text-transform: uppercase
 			text-decoration: none
-		// &_item
-		// 	line-height: 100%
-		&_language
-			width: 52px
-			margin: 0 auto
-			line-height: 1
-			.footer_menu_link
-				font-weight: 400
-				font-size: 11px
-				text-align: center
-				text-transform: uppercase
-				color: #1FBAD6
-				cursor: pointer
-	ul, li, a
+			color: #1FBAD6
+
+	a
 		line-height: 1 /* коррекция после bootstrap-reboot */
 
 
-	.nmb
+.nmb
 	margin-bottom: 0
+
+	// &_mobile
+	// 	display: flex
+	// 	justify-content: flex-end
+
+		
+			
+
+
+
+
+
+
+	// position: relative
+	// .socials
+	// 	width: 156px
+	// 	height: 35px
+	// 	position: absolute
+	// 	top: 48px
+	// 	.icon
+	// 		width: 32px
+	// 		height: 32px
+	// 		display: inline-flex
+	// 		justify-content: center
+	// 		align-items: center
+	// 		border-radius: 100%
+	// 		background: #070716
+	// 		img
+	// 			display: inline-block
+	// 			margin:  0 auto
+	// 			vertical-align: middle
+	// .stores
+	// 	width: 296px
+	// 	height: 27px
+	// 	display: flex
+	// 	justify-content: space-between
+	// 	position: absolute
+	// 	right: 0
+	// 	top: 47px
+	// 	&_item
+	// 		display: inline-block
+	// 		border-radius: 100%
+	// 		background: #070716
+	// .blue_line
+	// 	width: 301px
+	// 	height: 4px
+	// 	margin: 0 auto 34px
+	// 	background: #1FBAD6
+	// .footer_menu
+	// 	&_1
+	// 		padding: 0
+	// 		width: 362px
+	// 		margin: 0 auto 18px  /* обнуление margin в bootstrap-reboot */
+	// 		display: flex
+	// 		justify-content: space-between
+	// 		list-style-type: none /* убрать маркеры */
+	// 		.footer_menu_link
+	// 			font-size: 15px
+	// 			color: #070716
+	// 	&_2
+	// 		padding: 0
+	// 		width: 390px
+	// 		margin: 0 auto 19px /* обнуление margin в bootstrap-reboot */
+	// 		display: flex
+	// 		justify-content: space-between
+	// 		list-style-type: none /* убрать маркеры */
+	// 		.footer_menu_link
+	// 			font-size: 11px
+	// 			color: #999999
+	// 	&_link
+	// 		font-weight: 300
+	// 		text-transform: uppercase
+	// 		text-decoration: none
+	// 	// &_item
+	// 	// 	line-height: 100%
+	// 	&_language
+	// 		width: 52px
+	// 		margin: 0 auto
+	// 		line-height: 1
+	// 		.footer_menu_link
+	// 			font-weight: 400
+	// 			font-size: 11px
+	// 			text-align: center
+	// 			text-transform: uppercase
+	// 			color: #1FBAD6
+	// 			cursor: pointer
 
 
