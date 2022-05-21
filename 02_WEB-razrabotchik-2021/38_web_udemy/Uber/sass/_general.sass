@@ -7,7 +7,7 @@ nav
 	width: 100%
 	height: 52px
 	background: #212121
-	z-index: 2
+	z-index: 5
 
 .hamburger
 	display: none
@@ -114,6 +114,9 @@ nav
 		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 4px
+		font-weight: 400
+		font-size: 18px
+		color: #FFFFFF
 		+btn_hover
 
 .label
@@ -132,7 +135,7 @@ nav
 		background: #FFFFFF
 		color: rgba(7, 7, 22, 1)
 .title
-	margin: 33px auto 0
+	margin: 27px auto 0
 	font-weight: 700
 	font-size: 38px
 	line-height: 48px
@@ -144,6 +147,7 @@ nav
 .subtitle
 	font-weight: 400
 	font-size: 17px
+	line-height: 21px
 	text-align: center
 	color: #222222
 	margin-bottom: 30px
@@ -185,7 +189,7 @@ nav
 .mobile
 	min-height: 864px
 	padding: 46px 0 80px
-	background: url("../img/mobile_bg.png") center center/cover no-repeat
+	background: url("../img/mobile_bg.png") center (center/cover) no-repeat
 	&_item
 		width: 320px
 		height: 280px
@@ -196,17 +200,17 @@ nav
 		justify-content: space-between
 		align-items: center
 		&1
-			background: url("../img/Card1.png") center center/cover no-repeat
+			background: url("../img/Card1.png") center (center/cover) no-repeat
 		&2
-			background: url("../img/Card2.png") center center/cover no-repeat
+			background: url("../img/Card2.png") center (center/cover) no-repeat
 		&3
-			background: url("../img/Card3.png") center center/cover no-repeat
+			background: url("../img/Card3.png") center (center/cover) no-repeat
 		&4
-			background: url("../img/Card4.png") center center/cover no-repeat
+			background: url("../img/Card4.png") center (center/cover) no-repeat
 		&5
-			background: url("../img/Card5.png") center center/cover no-repeat
+			background: url("../img/Card5.png") center (center/cover) no-repeat
 		&6
-			background: url("../img/Card6.png") center center/cover no-repeat
+			background: url("../img/Card6.png") center (center/cover) no-repeat
 		&_subtitle
 			font-weight: 400
 			font-size: 24px
@@ -246,30 +250,37 @@ nav
 				&:before, &:after
 					background-color: $pink_color
 
-.choise
-	min-height: 898px
-	&_top
+.choice
+	min-height: 500px
+	position: relative
+	padding: 56px 0 30px 0 
+	background: $checkered_bg
+	.dark_bground
+		width: 100%
 		height: 502px
-		padding-top: 59px
+		position: absolute
+		top: 0
+		left: 0
 		background: $dark_bg
-		img
-			display: block
-			width: 100%
-			margin: 54px auto 0
-	&_bottom
-		height: 397px
-		padding-top: 210px
-		background: $checkered_bg
-		.choise_text
-			margin: 0 auto
-			font-weight: 300
-			font-size: 17px
-			line-height: 24px
-			text-align: center
-			color: #222222
+		z-index: 1
+	.label, .title, .subtitle
+		position: relative
+		z-index: 2
+	img
+		display: block
+		margin: 54px auto 0
+		position: relative
+		z-index: 2
+	&_text
+		margin: 0 auto
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		text-align: center
+		color: #222222
 
 .require
-	padding: 68px 0 87px 0
+	padding: 30px 0 87px 0
 	&_block
 		margin: 33px 0 28px 0
 	&_title
@@ -310,26 +321,51 @@ nav
 					background: url("../icons/check_red.png") center center/cover no-repeat
 					
 .world
-	background: #080816
+	background: #070716
+	min-height: 717px
+	padding: 0 240px 0
 	&_wrapper
-		background: url("../img/world_bg.png") center center/cover no-repeat
+		min-height: 717px
+		background: url("../img/world_bg.png") center (center/cover) no-repeat
 		padding: 48px 0 21px
-		min-height: 720px
 		position: relative
 	&_towns
 		width: 223px
 		height: 68px
+		padding: auto
 		position: absolute
-		bottom: 0
+		bottom: 22px
 		left: 50%
 		transform: translateX(-50%)
 		font-weight: 400
 		font-size: 15px
+		line-height: 68px
 		text-align: center
 		text-transform: uppercase
 		text-decoration: none
 		cursor: pointer
 		color: #1FBAD6
+
+// .world 
+// 	position: relative
+// 	min-height: 717px
+// 	padding: 49px 0
+// 	background: url('../img/world_bg.png') center (center / cover) no-repeat
+// 	&_link 
+// 		position: absolute
+// 		left: 50%
+// 		transform: translateX(-50%)
+// 		bottom: 49px
+// 		text-align: center
+// 		font-size: 15px
+// 		font-weight: 400
+// 		line-height: 68px
+// 		text-transform: uppercase
+// 		color: #1fbad6
+// 		&:hover 
+// 			text-decoration: none
+// 			color: #fff
+
 
 footer
 	padding: 14px 23px 39px 23px

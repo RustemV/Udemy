@@ -18,6 +18,9 @@
 	.mobile
 		&_item 
 			width: 300px
+	.require
+		br
+			display: none
 
 @media (max-width: 991px)
 	.menu
@@ -47,8 +50,13 @@
 		&_item
 			flex-direction: column
 			align-items: center
+			&_round
+				margin-right: 0
 			&_descr
 				margin-top: 15px
+	.choice
+		img
+			width: 100%
 
 @media (max-width: 767px)
 	.menu
@@ -58,7 +66,7 @@
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		width: 50%
+		width: 85%
 		height: 100vh
 		padding: 20px 15px
 		background-color: rgba(0,0,0,0.85)
@@ -107,7 +115,7 @@
 			margin-top: 9px
 			font-weight: 400
 			font-size: 16px
-			line-height: 16px;
+			line-height: 16px
 			color: #FFFFFF
 			text-align: center
 		&_btn
@@ -117,6 +125,138 @@
 			margin: 10px auto 0
 			font-size: 16px
 	.promo
-		padding-top: 130px
+		min-height: 600px
+		padding: 130px 0 120px
 		&_header
 			line-height: 48px
+	.title
+		margin-top: 18px
+		font-size: 16px
+		line-height: 16px
+	.subtitle
+		font-size: 14px
+		margin-bottom: 27px
+
+@media (max-width: 575px)
+	header
+		height: 32px
+	nav
+		height: 32px
+	.menu
+		&_link
+			font-size: 20px
+	.subheader
+		height: 60px
+		top: 32px
+		&_logo
+			margin-top: 16px
+		&_official
+			display: none
+		&_phone
+			margin-top: 6px
+			font-size: 12px
+		&_btn
+			width: 110px
+			height: 22px
+			margin-top: 7px
+			font-size: 10px;
+	.promo
+		min-height: 400px
+		padding: 102px 0 34px
+		&_header
+			font-size: 30px
+			line-height: 35px
+		&_subheader
+			font-size: 20px
+			line-height: 23px
+		&_descr
+			display: none
+		&_btn
+			margin: 73px auto 0
+			width: 210px
+			height: 50px
+	.reasons
+		padding: 23px 0 38px 0
+		&_item
+			margin-top: 24px
+			&_round
+				width: 100px
+				height: 100px
+			&_descr
+				width: 100%
+				margin-top: 23px
+				text-align: justify
+				span
+					font-size: 16px
+					text-align: left 
+	.mobile
+		min-height: 1889px
+		padding: 25px 0 43px
+		&_item
+			width: 290px
+			height: 254px
+			margin: 0 auto 30px
+			padding: 80px 32px 21px 32px
+			&_subtitle
+				font-size: 18px
+				line-height: 31px
+	.choice
+		min-height: 393px
+		position: relative
+		padding: 26px 0 31px 0 
+		background: $dark_bg
+		.hidden-320
+			display: none
+		img
+			margin-top: 36px
+		&_text
+			margin-top: 23px
+			color: #FFFFFF
+	.require
+		min-height: 900px
+		padding: 22px 0 30px 0
+		.title
+			margin-top: 14px
+		&_block
+			padding: 0 3px
+			margin-bottom: 0
+		&_title
+			margin-bottom: 5px	
+			font-size: 16px
+		&_list 
+			margin-bottom: 0
+			li
+				margin-left: 0
+				margin-bottom: 5px
+				font-size: 14px
+				line-height: 16px
+				&::before
+					left: -33px
+					top: -3px
+		&_descr
+			margin-top: 15px
+			font-size: 14px
+			line-height: 16px
+	.world
+		background: #080816
+		&_wrapper
+			background: url("../img/world_bg.png") center center/cover no-repeat
+			padding: 26px 0 0
+			min-height: 360px
+			position: relative
+		&_towns
+			// width: 223px
+			// height: 68px
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			font-weight: 400
+			font-size: 15px
+			// text-align: center
+			text-transform: uppercase
+			text-decoration: none
+			cursor: pointer
+			color: #1FBAD6
+
+					
