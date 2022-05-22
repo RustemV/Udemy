@@ -57,6 +57,9 @@
 	.choice
 		img
 			width: 100%
+	.footer
+		&_wrapper > div
+			width: 100%
 
 @media (max-width: 767px)
 	.menu
@@ -136,6 +139,9 @@
 	.subtitle
 		font-size: 14px
 		margin-bottom: 27px
+	.world
+		padding: 0 8% 0
+
 
 @media (max-width: 575px)
 	header
@@ -238,25 +244,36 @@
 			font-size: 14px
 			line-height: 16px
 	.world
-		background: #080816
+		min-height: 360px
+		padding: 0
 		&_wrapper
-			background: url("../img/world_bg.png") center center/cover no-repeat
+			// background: url("../img/world_bg.png") center center/cover no-repeat
 			padding: 26px 0 0
 			min-height: 360px
-			position: relative
+		.subtitle
+			margin: 12px 0 30px
 		&_towns
-			// width: 223px
-			// height: 68px
-			position: absolute
-			bottom: 0
-			left: 50%
-			transform: translateX(-50%)
-			font-weight: 400
-			font-size: 15px
-			// text-align: center
-			text-transform: uppercase
-			text-decoration: none
-			cursor: pointer
-			color: #1FBAD6
+			bottom: 5px
 
-					
+	footer
+		padding: 25px 17px 30px
+	.footer
+		&_divider
+			width: 253px
+		&_wrapper
+			padding-top: 21px
+		// 	// display: flex
+		// 	flex-direction: column
+		// 	// justify-content: space-between
+		// 	justify-content: flex-start
+		// 	// align-items: flex-start
+		// 	align-items: center
+		&_wrapper > div
+			&:nth-child(1)
+				order: 2
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 3
+
+
