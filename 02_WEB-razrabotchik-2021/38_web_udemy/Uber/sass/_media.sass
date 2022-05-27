@@ -9,7 +9,6 @@
 			font-size: 50px
 		&_subheader
 			font-size: 34px
-
 	.reasons
 		&_item
 			align-items: flex-start
@@ -21,7 +20,20 @@
 	.require
 		br
 			display: none
-
+	.footer
+		&_wrapper > div
+			width: 50%
+			&:nth-child(1)
+				width: 25%
+			&:nth-child(3)
+				width: 25%
+		&_mobile
+			display: flex
+			a
+				margin: 0 3px 3px
+				img
+					width: 100%
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @media (max-width: 991px)
 	.menu
 		&_item
@@ -58,9 +70,19 @@
 		img
 			width: 100%
 	.footer
+		&_wrapper
+			flex-wrap: wrap
 		&_wrapper > div
 			width: 100%
-
+			display: flex
+			justify-content: center
+			margin-bottom: 20px
+			&:nth-child(1)
+				width: 100%
+			&:nth-child(3)
+				width: 100%
+				justify-content: center
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @media (max-width: 767px)
 	.menu
 		position: fixed
@@ -141,16 +163,20 @@
 		margin-bottom: 27px
 	.world
 		padding: 0 8% 0
-
-
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @media (max-width: 575px)
 	header
 		height: 32px
 	nav
 		height: 32px
 	.menu
+		&_item
+			width: 100%
 		&_link
+			display: block
+			padding: 10px 0
 			font-size: 20px
+			text-align: center
 	.subheader
 		height: 60px
 		top: 32px
@@ -254,7 +280,6 @@
 			margin: 12px 0 30px
 		&_towns
 			bottom: 5px
-
 	footer
 		padding: 25px 17px 30px
 	.footer
@@ -262,18 +287,24 @@
 			width: 253px
 		&_wrapper
 			padding-top: 21px
-		// 	// display: flex
-		// 	flex-direction: column
-		// 	// justify-content: space-between
-		// 	justify-content: flex-start
-		// 	// align-items: flex-start
-		// 	align-items: center
 		&_wrapper > div
 			&:nth-child(1)
 				order: 2
 			&:nth-child(2)
 				order: 1
+				margin-bottom: 17px
 			&:nth-child(3)
 				order: 3
-
-
+		&_links
+			&_main
+				padding: 0
+				a
+					font-size: 14px
+			&_sub
+				flex-wrap: wrap
+				margin-top: 8px
+				a
+					font-size: 11px
+					margin: 0 18px 8px
+			&_lang
+				margin-top: 4px
